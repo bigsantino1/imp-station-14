@@ -26,6 +26,12 @@ public sealed partial class RadioChannelPrototype : IPrototype
     [DataField("color")]
     public Color Color { get; private set; } = Color.Lime;
 
+    /// <summary>
+    ///  Color used when color friendly mode is enabled
+    /// </summary>
+    [DataField("cbColor")]
+    public Color CbColor { get; private set; } = Color.Lime;
+
     [IdDataField, ViewVariables]
     public string ID { get; } = default!;
 

@@ -307,3 +307,6 @@ Resources/MapImages
 # Direnv stuff
 .direnv/
 
+# Run Folder (for rider I think)
+.run/
+
