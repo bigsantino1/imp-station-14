@@ -26,6 +26,7 @@
   keycode: 'e'
   frequency: 1357
   color: "#ff733c"
+  cbColor: "#d50000"
 
 - type: radioChannel
   id: Medical

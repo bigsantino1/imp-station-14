@@ -181,8 +181,6 @@ public abstract class SharedChatSystem : EntitySystem
             if (ev.Channel != null)
                 _prototypeManager.TryIndex(ev.Channel, out channel);
 
-            // likely good spot for color = cb color swap
-
             return true;
         }
 

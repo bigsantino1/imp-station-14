@@ -1,4 +1,7 @@
+using Content.Shared._Impstation.CCVar;
 using Robust.Shared.Prototypes;
+using Content.Shared.CCVar;
+using Robust.Shared.Configuration;
 
 namespace Content.Shared.Radio;
 
@@ -41,4 +44,6 @@ public sealed partial class RadioChannelPrototype : IPrototype
     /// </summary>
     [DataField("longRange"), ViewVariables]
     public bool LongRange = false;
+
+
 }
