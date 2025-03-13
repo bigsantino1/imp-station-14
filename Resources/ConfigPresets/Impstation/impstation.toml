@@ -52,5 +52,4 @@ role_time = 10
 login_dataset = "LoginTips"
 
 [worldgen]
-# Enables the generation of random space debris around the station and beyond
 enabled = true
