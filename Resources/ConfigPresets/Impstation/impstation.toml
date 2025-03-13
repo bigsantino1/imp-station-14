@@ -50,3 +50,6 @@ role_time = 10
 [tips]
 # this doesn't actually propagate to the client right now
 login_dataset = "LoginTips"
+
+[worldgen]
+enabled = true
