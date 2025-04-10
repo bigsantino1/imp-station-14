@@ -148,3 +148,28 @@
   - type: RampingStationEventScheduler
     scheduledGameRules: !type:NestedSelector
       tableId: LowpopGameRulesTable
+
+- type: entity
+  id: CriminalTakeover
+  parent: BaseGameRule
+  components:
+  - type: RampingStationEventScheduler
+    scheduledGameRules: !type:NestedSelector
+      tableId: CriminalGameRulesTable
+
+- type: entityTable
+  id: CriminalGameRulesTable
+  table: !type:AllSelector
+    children:
+
+- type: entity
+  id: SpaceTrafficControlFreelanceHostileEventScheduler
+  parent: BaseGameRule
+  components:
+  - type: BasicStationEventScheduler
+    minimumTimeUntilFirstEvent: 1200 # 20 mins
+    minMaxEventTiming:
+      min: 600 # 10 mins
+      max: 1800 # 30 mins
+    scheduledGameRules: !type:NestedSelector
+      tableId: UnknownShuttlesFreelanceTable

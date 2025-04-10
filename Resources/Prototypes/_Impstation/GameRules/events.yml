@@ -12,6 +12,16 @@
     - id: ParadoxCloneSpawn
     - id: GoblinStowawaysEvent # imp
 
+- type: entityTable
+  id: CriminalAntagEventsTable
+  table: !type:AllSelector
+    children:
+    - !type:NestedSelector
+      tableId: BaseicAntagEventsTableDV
+    - id: NinjaSpawn
+    - id: LoneOpsSpawn
+    - id: SleeperAgents
+
 - type: entity
   id: ChangelingAwakening
   parent: BaseGameRule
